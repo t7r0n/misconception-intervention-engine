@@ -2,13 +2,19 @@
 
 A local education analytics prototype that maps synthetic learner signals to standards-aligned misconceptions and intervention recommendations.
 
-## Features
+`kiddom-misconception-intervention-engine` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Context
+
+Misconception-to-Intervention Engine for Standards-Aligned Classrooms.
+
+## Scoring model
 
 - Synthetic classroom, assessment, standard, and intervention records.
 - Misconception clustering with evidence-backed intervention ranking.
 - Static dashboard and verifier for explainable instructional recommendations.
 
-## Run Locally
+## Execution
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Audit trail
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Validation commands
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## Synthetic data
+
+The `kiddom-misconception-intervention-engine` public surface is source, tests, lockfile, and docs. It does not need credentials, browser state, customer records, or hosted services.

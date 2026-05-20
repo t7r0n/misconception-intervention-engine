@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'instructional_confidence'
 PRIMARY_LABEL = 'Confidence'
 CHECKS = ['misconception families classify correctly', 'language access not mislabeled as mastery failure', 'grouping respects accommodations', 'unsupported standards alignment rejected']
 CASES = [['student-group-a', 'procedural_error', 'intervene', True, 91, 'work:W1 standard:4.NF.3', 'common denominator error across group'], ['student-group-b', 'language_access', 'language_support', True, 78, 'work:W7 accommodation:A2', 'vocabulary issue not concept failure'], ['student-group-c', 'prerequisite_gap', 'reteach', True, 86, 'work:W12 standard:3.NBT.1', 'base-ten representation gap'], ['student-group-d', 'careless_error', 'practice', False, 64, 'work:W20 rubric:R3', 'isolated arithmetic slips'], ['student-group-e', 'unsupported_alignment', 'review', True, 35, 'standard:missing', 'alignment claim lacks source evidence']]
-SLUG = 'misconception-compass'
+SLUG = 'misconception-intervention-engine'
 
 
 class DomainCase(BaseModel):

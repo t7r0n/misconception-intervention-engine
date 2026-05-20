@@ -1,5 +1,6 @@
 # Misconception Intervention Engine
 
+![Misconception Intervention Engine working preview](outputs/project_working.svg)
 A local education analytics prototype that maps synthetic learner signals to standards-aligned misconceptions and intervention recommendations.
 
 `kiddom-misconception-intervention-engine` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
@@ -49,3 +50,5 @@ uv run app verify
 ## Synthetic data
 
 The `kiddom-misconception-intervention-engine` public surface is source, tests, lockfile, and docs. It does not need credentials, browser state, customer records, or hosted services.
+
+![Misconception Intervention Engine evidence map](outputs/evidence_map.svg)
